@@ -1,38 +1,219 @@
-.App {
+body {
+  background-color: #767373;
+}
+
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+nav {
+  background: #1E1E1E;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.link:hover {
+  color: #C1AF07;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  color: #1E1E1E;
+  text-shadow: #FC0 1px 0 10px;
+  font-family: 'Philosopher', sans-serif;
+}
+.product-card {
+  width: 300px;
+  height: 580px;
+  background-color: #1E1E1E;
+  border-radius: 50px ;
+  border: 2px solid #1E1E1E;
+  margin: 10px;
+  font-family: 'Philosopher', sans-serif;
+}
+.bottleCard {
+border-radius: 50px 50px 0px 0px;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.infoCard {
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.change {
+  padding: 10px;
+  background-color: #C1AF07;
+  color: #1E1E1E;
+  border-radius: 12px;
+  border: 1px solid #FFFFFF;
+  text-transform: uppercase;
+  width: 135px;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.change:hover {
+  font-size: large;
+  padding: 5px;
+  border: 3px solid #FFFFFF; 
+}
+
+.history-card {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  background-color: rgb(30, 30, 30, 0.6);
+  color: #FFFFFF;
+  border-radius: 40px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  box-shadow: 4px 4px 4px 0 #FFFFFF, -4px -4px 4px 0 #FFFFFF, 4px 4px 4px 0 #767373;
+}
+.history-card:hover {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  box-shadow: 4px 4px 4px 0 #FFFFFF, -4px -4px 4px 0 #00ffff, 4px 4px 4px 0 #767373;
+}
+
+.history-info {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title {
+  color: #C1AF07;
+  text-transform: uppercase;
+  text-shadow: black 1px 0 10px;
+  font-family: 'Philosopher', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.history-image {
+  border-radius: 40px 0px 0px 40px;
+}
+p {
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.btn {
+  background-color:rgb(30, 30, 30, 0);
+  color: #00ffff;
+  border: none;
+}
+
+.bottleName  {
+  color: #00ffff;
+  text-transform: uppercase;
+}
+.container-slide {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: #1E1E1E;
+  
+}
+.giftImage {
+  border-radius: 40px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  box-shadow: 4px 4px 4px 0 #56cef3,  4px 4px 4px 0 #56cef3;
+}
+
+.container-btn {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 12px;
+}
+h3 {
+  font-family: 'Philosopher', sans-serif;
+  color: #00ffff;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-back {
+  background-color: #C1AF07;
+  padding: 10px;
+  width: 80px;
+  border-radius: 15px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-back:hover {
+  text-transform: uppercase;
 }
+.container-wish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media all and (max-width:500px) {
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+  }
+
+  .history-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .history-image {
+    width: 350px;
+    height: 250px;
+    border-radius: 40px 40px 0px 0px;
+  }
+
+  p {
+    margin: 4px;
+    font-size: 15px;
+    font-family: 'Philosopher', sans-serif;
+  }
+
+  .container-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .giftImage {
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+  }
+
+}
+
+
+
+
