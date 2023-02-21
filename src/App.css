@@ -149,7 +149,7 @@ p {
   justify-content: center;
   margin: 12px;
 }
-h3 {
+.giftTitle {
   font-family: 'Philosopher', sans-serif;
   color: #00ffff;
 }

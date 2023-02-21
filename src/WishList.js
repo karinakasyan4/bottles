@@ -27,14 +27,14 @@ const nextGift =() =>{
     return(
         <div className="container-slide">
             <div className="container-btn">
-                <button className="btn-back" onClick={previousGift}>back</button>
+                <button className="btn-back" onClick={previousGift}>назад</button>
             </div>
             <div className="container-wish">
                 <img className="giftImage" src={image} alt='gift' width='400px' height='600px'/>
-                <h3>{title}</h3>
+                <h3 className="giftTitle">{title}</h3>
             </div>
             <div className="container-btn">
-                <button className="btn-back" onClick={nextGift}>next</button>
+                <button className="btn-back" onClick={nextGift}>вперед</button>
             </div>
         </div>
     )

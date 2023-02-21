@@ -12,18 +12,21 @@ import './App.css';
 
 function App() {
   return <Router>
-    <nav>
-      <Link to='/history' className='link'>О напитках</Link>
-      <Link to='/home' className='link'>Коллекция</Link>
-      <Link to='/wishList' className='link'>Пожелания</Link>
-    </nav>
+      <nav>
+        <Link to='/history' className='link'>О напитках</Link>
+        <Link to='/home' className='link'>Коллекция</Link>
+        <Link to='/wishList' className='link'>Пожелания</Link>
+      </nav>
 
-    <Routes>
-      <Route path='/history' element={<History/>}/>
-      <Route path='/home' element={<Home/>}/>
-      <Route path='/wishList' element={<WishList/>}/>
-    </Routes>
-  </Router>
+      <Routes>
+        <Route path='/history' element={<History/>}/>
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/wishList' element={<WishList/>}/>
+      </Routes>
+    </Router>
+
+
+  
 }
 
 export default App;
