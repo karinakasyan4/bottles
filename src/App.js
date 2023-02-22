@@ -19,6 +19,7 @@ function App() {
       </nav>
 
       <Routes>
+        <Route path='/' element={<Home/>}/>
         <Route path='/history' element={<History/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/wishList' element={<WishList/>}/>

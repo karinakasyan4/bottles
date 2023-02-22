@@ -5,7 +5,7 @@ import './App.css';
 
 function History(){
     const[drink, setDrink] = useState(dataHistory);
-    console.log(drink);
+    
 
     const [showText, setShowText] = useState(false);
     const showTextClick = (element) =>{
