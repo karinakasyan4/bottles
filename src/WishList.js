@@ -5,7 +5,7 @@ import './App.css';
 
 function WishList(){
 const [gift, setGift]= useState(0);
-const {id, image, title} = dataWishList[gift];
+const {image, title} = dataWishList[gift];
 const previousGift = ()=>{
     setGift((gift => {
         gift --;
