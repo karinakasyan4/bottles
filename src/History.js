@@ -19,7 +19,7 @@ function History(){
     }
 
     return(
-        <div>
+        <div className="mainCont">
             <div className="container">
                 <h1>О напитках</h1>
             </div>
@@ -27,13 +27,13 @@ function History(){
                 const {id, title, image, description, showMore} = element;
                 return(<div className="history-card" key={id}>
                     <div>
-                        <img className="history-image" src={image} width='300px' height='200px' alt="glass"/>
+                        <img className="history-image" src={image} alt="glass"/>
                     </div>
                     <div className="history-info">
                         <h2 className="title">{title}</h2>
                         <p>{showMore ? description : description.substring(0,320)+ '...'} <button className="btn" onClick={()=>showTextClick(element)}>{showMore ?'Показать меньше': 'Показать больше'}</button> </p>
                     </div>
-                    <div>
+                    <div className="btnClose">
                         <button onClick={()=> {remoteHistory(id)}} className='close'>❌</button>
                     </div>
                 </div>)
