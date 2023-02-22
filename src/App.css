@@ -172,6 +172,14 @@ p {
   align-items: center;
 }
 
+.close {
+  border-radius: 50%;
+  border: none;
+}
+.close:hover {
+  font-size: large;
+}
+
 
 @media all and (max-width:500px) {
   

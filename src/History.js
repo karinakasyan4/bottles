@@ -5,6 +5,11 @@ import './App.css';
 
 function History(){
     const[drink, setDrink] = useState(dataHistory);
+
+    const remoteHistory =(id) =>{
+        let newHistory = drink.filter(drink => drink.id !== id);
+        setDrink(newHistory)
+    }
     
 
     const [showText, setShowText] = useState(false);
@@ -27,6 +32,9 @@ function History(){
                     <div className="history-info">
                         <h2 className="title">{title}</h2>
                         <p>{showMore ? description : description.substring(0,320)+ '...'} <button className="btn" onClick={()=>showTextClick(element)}>{showMore ?'Показать меньше': 'Показать больше'}</button> </p>
+                    </div>
+                    <div>
+                        <button onClick={()=> {remoteHistory(id)}} className='close'>❌</button>
                     </div>
                 </div>)
             }))}
